@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        
+        let arrName = ["한지상", "박강현", "민우혁", "김선영", "차지연", "박선아"];
+        arrName[5] = "정선아";
+
+        /* for(let i = 0; i < arrName.length; i++)
+        {
+            alert("오늘의 배우는 " + arrName[i] + "님이십니다!");
+        } */
+
+        let i = 0;
+        while(i < arrName.length)
+        {
+            alert("오늘의 배우는 " + arrName[i] + "님이십니다!");
+            i++;
+        }
     </script>
 </head>
 <body>
