@@ -1,0 +1,282 @@
+body {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul, li {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 130px;
+  line-height: 100px;
+  background-color: rgb(177, 221, 176);
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0px auto;
+}
+
+header .logo {
+  height: 130px;
+}
+
+header .logo img {
+  display: block;
+  filter: drop-shadow(1px 2px 3px rgb(49, 49, 49));
+  height: 100%;
+}
+
+header .menutab {
+  display: flex;
+  gap: 30px;
+}
+
+header .menutab > li a {
+  padding: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration-line: none;
+  font-size: 25px;
+  font-weight: normal;
+  color: black;
+  text-shadow: 1px 2px 3px rgb(49, 49, 49);
+}
+
+header .menutab > li a:hover {
+  color: #ccc; transition: all .2s linear;
+}
+
+#youtube {
+  position: fixed;
+  background-color: white;
+  top: 130px;
+  left: 0px;
+  width: 50%;
+  height: 130px;
+  line-height: 125px;
+  text-indent: 80px;;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+#md {
+  position: fixed;
+  background-color: white;
+  top: 130px;
+  right: 0px;
+  width: 50%;
+  height: 130px;
+  line-height: 125px;
+  text-indent: 80px;;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 693px;
+  top: 260px;
+  left: 0px;
+}
+
+.youback {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 693px;
+  background-color: rgba(227, 241, 227, 60%);
+}
+
+.mdback {
+  position: relative;
+  top: -693px;
+  right: -960px;
+  width: 50%;
+  height: 693px;
+  background-color: rgba(134, 202, 211, 20%);
+}
+
+#ipanda0 {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+}
+
+#ipanda1 {
+  position: absolute;
+  width: 700px;
+  left: 400px;
+  top: 40px;
+  font-family: '맑은고딕';
+  font-weight: bold;
+  font-size: 34px;
+  color: black;
+}
+
+#ipanda2 {
+  position: absolute;
+  width: 700px;
+  left: 400px;
+  top: 95px;
+  font-family: '맑은고딕';
+  font-size: 24px;
+  text-decoration: none;
+  a:link {
+    color: rgb(48, 96, 168)
+  }
+  a:visited {
+    color: rgb(48, 96, 168)
+  }
+}
+
+#ipanda3 {
+  position: absolute;
+  width: 700px;
+  left: 400px;
+  top: 145px;
+  font-family: '맑은고딕';
+  font-size: 24px;
+  color: black;
+}
+
+#ppuppa0 {
+  position: absolute;
+  top: 270px;
+  left: 80px;
+}
+
+#ppuppa1 {
+  position: absolute;
+  width: 700px;
+  left: 400px;
+  top: 270px;
+  font-family: '맑은고딕';
+  font-weight: bold;
+  font-size: 34px;
+  color: black;
+}
+
+#ppuppa2 {
+  position: absolute;
+  width: 700px;
+  left: 400px;
+  top: 325px;
+  font-family: '맑은고딕';
+  font-size: 24px;
+  text-decoration: none;
+  a:link {
+    color: rgb(48, 96, 168)
+  }
+  a:visited {
+    color: rgb(48, 96, 168)
+  }
+}
+
+#ppuppa3 {
+  position: absolute;
+  width: 700px;
+  left: 400px;
+  top: 375px;
+  font-family: '맑은고딕';
+  font-size: 24px;
+  color: black;
+}
+
+#everland0 {
+  position: absolute;
+  object-fit: cover;
+  width: 145px;
+  height: 145px;
+  bottom: 40px;
+  left: 80px;
+  border-radius: 50%;
+}
+
+#everland1 {
+  position: absolute;
+  width: 700px;
+  left: 400px;
+  top: 505px;
+  font-family: '맑은고딕';
+  font-weight: bold;
+  font-size: 34px;
+  color: black;
+}
+
+#everland2 {
+  position: absolute;
+  width: 700px;
+  left: 400px;
+  top: 560px;
+  font-family: '맑은고딕';
+  font-size: 24px;
+  text-decoration: none;
+  a:link {
+    color: rgb(48, 96, 168)
+  }
+  a:visited {
+    color: rgb(48, 96, 168)
+  }
+}
+
+#everland3 {
+  position: absolute;
+  width: 700px;
+  left: 400px;
+  top: 610px;
+  font-family: '맑은고딕';
+  font-size: 24px;
+  color: black;
+}
+
+#md0 {
+  position: absolute;
+  top: 140px;
+  left: 305px;
+}
+
+#md1 {
+  position: absolute;
+  left: 267px;
+  top: 390px;
+  font-family: '맑은고딕';
+  font-weight: bold;
+  font-size: 34px;
+  color: black;
+}
+
+#md2 {
+  position: absolute;
+  left: 305px;
+  top: 448px;
+  font-family: '맑은고딕';
+  font-size: 24px;
+  text-decoration: none;
+  a:link {
+    color: rgb(48, 96, 168)
+  }
+  a:visited {
+    color: rgb(48, 96, 168)
+  }
+}

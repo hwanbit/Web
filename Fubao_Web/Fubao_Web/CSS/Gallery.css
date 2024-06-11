@@ -1,0 +1,326 @@
+body {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul, li {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 130px;
+  line-height: 100px;
+  background-color: rgb(177, 221, 176);
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0px auto;
+}
+
+header .logo {
+  height: 130px;
+}
+
+header .logo img {
+  display: block;
+  filter: drop-shadow(1px 2px 3px rgb(49, 49, 49));
+  height: 100%;
+}
+
+header .menutab {
+  display: flex;
+  gap: 30px;
+}
+
+header .menutab > li a {
+  padding: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration-line: none;
+  font-size: 25px;
+  font-weight: normal;
+  color: black;
+  text-shadow: 1px 2px 3px rgb(49, 49, 49);
+}
+
+header .menutab > li a:hover {
+  color: #ccc; transition: all .2s linear;
+}
+
+#gallery {
+  position: fixed;
+  background-color: white;
+  top: 130px;
+  width: 100%;
+  height: 130px;
+  line-height: 125px;
+  text-indent: 80px;;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  top: 260px;
+  left: 0px;
+}
+
+#pic1 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 80px;
+  top: 0px;
+  object-fit: cover;
+}
+
+#pic2 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 276px;
+  top: 0px;
+  object-fit: cover;
+}
+
+#pic3 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 472px;
+  top: 0px;
+  object-fit: cover;
+}
+
+#pic4 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 668px;
+  top: 0px;
+  object-fit: cover;
+}
+
+#pic5 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 864px;
+  top: 0px;
+  object-fit: cover;
+}
+
+#pic6 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 1060px;
+  top: 0px;
+  object-fit: cover;
+}
+
+#pic7 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 1256px;
+  top: 0px;
+  object-fit: cover;
+}
+
+#pic8 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 1452px;
+  top: 0px;
+  object-fit: cover;
+}
+
+#pic9 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 1648px;
+  top: 0px;
+  object-fit: cover;
+}
+
+#pic10 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 80px;
+  top: 197px;
+  object-fit: cover;
+}
+
+#pic11 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 276px;
+  top: 197px;
+  object-fit: cover;
+}
+
+#pic12 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 472px;
+  top: 197px;
+  object-fit: cover;
+}
+
+#pic13 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 668px;
+  top: 197px;
+  object-fit: cover;
+}
+
+#pic14 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 864px;
+  top: 197px;
+  object-fit: cover;
+}
+
+#pic15 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 1060px;
+  top: 197px;
+  object-fit: cover;
+}
+
+#pic16 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 1256px;
+  top: 197px;
+  object-fit: cover;
+}
+
+#pic17 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 1452px;
+  top: 197px;
+  object-fit: cover;
+}
+
+#pic18 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 1648px;
+  top: 197px;
+  object-fit: cover;
+}
+
+#pic19 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 80px;
+  top: 394px;
+  object-fit: cover;
+}
+
+#pic20 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 276px;
+  top: 394px;
+  object-fit: cover;
+}
+
+#pic21 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 472px;
+  top: 394px;
+  object-fit: cover;
+}
+
+#pic22 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 668px;
+  top: 394px;
+  object-fit: cover;
+}
+
+#pic23 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 864px;
+  top: 394px;
+  object-fit: cover;
+}
+
+#pic24 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 1060px;
+  top: 394px;
+  object-fit: cover;
+}
+
+#pic25 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 1256px;
+  top: 394px;
+  object-fit: cover;
+}
+
+#pic26 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 1452px;
+  top: 394px;
+  object-fit: cover;
+}
+
+#pic27 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 1648px;
+  top: 394px;
+  object-fit: cover;
+}
