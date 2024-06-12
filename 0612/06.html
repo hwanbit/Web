@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let p = {
+            name : '이미선',
+            eat : function(food, name)
+            {
+                alert(name + "이(가) " + food + "를(을) 먹습니다.");
+            }
+        };
+
+        p.name = prompt("이름을 입력하세요.", "홍길동");
+        let food = prompt("음식을 입력하세요.", "만두");
+        p.eat(food, p.name);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
