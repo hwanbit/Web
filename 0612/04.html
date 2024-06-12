@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function anonymousCallTen(fun, n)
+        {
+            for(let i = 0; i < n; i++)
+            {
+                fun(i+1);
+            };
+        };
+
+        let fun = function(i)
+        {
+            alert("익명 함수 호출됨 " + i);
+        };
+
+        let n = parseInt(prompt("반복 횟수를 정수로 입력해 주세요.", 5));
+        anonymousCallTen(fun, n);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
