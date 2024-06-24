@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fubao Web</title>
+
+    <link rel="stylesheet" href="CSS/Word.css">
+    
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script>
+        let obj;
+
+        function makeClock() {
+            obj = document.getElementById("clock");
+            setInterval(updateTime, 1000);
+        }
+
+        function updateTime() {
+            let now = new Date();
+            
+            // 한국 시간
+            let koreaTime = now.toLocaleString('ko-KR');
+            
+            // 중국 시간
+            let chinaTime = new Date(now.getTime() - 1 * 60 * 60 * 1000).toLocaleString('zh-CN');
+
+            // 시간 표시
+            obj.innerHTML = `한국 시간: ${koreaTime} <br> 중국 시간: ${chinaTime}`;
+        }
+        
+        function displayText() {
+            const inputText = document.getElementById('inputText').value;
+            const outputElement = document.getElementById('output');
+        
+            outputElement.innerHTML = '';
+        
+            inputText.split('').forEach((char, index) => {
+                const span = document.createElement('span');
+                span.textContent = char === ' ' ? '\u00A0' : char;
+                span.classList.add('char');
+                span.style.setProperty('--char-index', index);
+                outputElement.appendChild(span);
+            });
+        
+            Splitting({ target: outputElement });
+        
+            outputElement.classList.remove('animate');
+            void outputElement.offsetWidth;
+            outputElement.classList.add('animate');
+        }
+
+        window.onload = function() {
+            alert("푸바오에게 하고 싶은 말을 마음껏 표현해주세요!\n(최대 65글자 표현 가능)");
+            makeClock();
+        };
+    </script>
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="logo"><a href="Home.html"><img src="Figma_Panda/Fu3.png" alt="Logo"></a></h1>
+            <ul class="menutab">
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+              <li><a href="Online.html">Online</a></li>
+              <li><a href="Word.html">Word</a></li>
+            </ul>
+          </div>
+    </header>
+    <div class="container">
+        <input type="text" id="inputText" placeholder="공백 포함 65글자 이내">
+        <button onclick="displayText()">Enter</button>
+    </div>
+    <div id="output"></div>
+    <div id="clock"></div>
+
+    <script>
+        document.getElementById('inputText').addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                displayText();
+            }
+        });
+    </script>
+</body>
+</html>
